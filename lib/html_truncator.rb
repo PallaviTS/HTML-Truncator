@@ -21,7 +21,7 @@ class HTML_Truncator
     attr_accessor :ellipsable_tags, :self_closing_tags
   end
   self.ellipsable_tags = Set.new(%w(p ol ul li div header article nav section footer aside dd dt dl))
-  self.self_closing_tags = Set.new(%w(br hr img param embed))
+  self.self_closing_tags = Set.new(%w(br hr img param embed iframe))
 end
 
 class Nokogiri::HTML::DocumentFragment
